@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keepScreenOn="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_printdevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="NAME"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tv_connect_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_printdevice"
+        android:layout_alignBottom="@+id/tv_printdevice"
+        android:layout_marginLeft="42dp"
+        android:layout_toRightOf="@+id/tv_printdevice"
+        android:text="STATE"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="连接设备"
+        android:layout_toRightOf="@+id/tv_connect_state"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:id="@+id/et_print_data"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_below="@+id/tv_printdevice"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/backg_edit"></EditText>
+
+
+    <Button
+        android:id="@+id/btn_command"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_print_data"
+        android:layout_marginTop="10dp"
+        android:text="指令" />
+
+    <Button
+        android:id="@+id/btn_print"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_command"
+        android:layout_marginTop="10dp"
+        android:text="打印" />
+
+</RelativeLayout>
